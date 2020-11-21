@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">ParcialDAM</string>
+    <string name="nameTextView">Nombre:</string>
+    <string name="nameEditTextHint">Nombre</string>
+    <string name="YesButton">Si</string>
+    <string name="NoButton">No</string>
+    <string name="StudyTextView">Estudiaste?</string>
+    <string name="AddStudent">CARGAR ESTUDIANTE</string>
+    <string name="SeeAll">VER ESTUDIANTES</string>
 </resources>
