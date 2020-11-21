@@ -55,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
         studentsRecyclerView.setLayoutManager(studentsListLayoutManager);
 
         studentsListAdapter = new StudentsListAdapter(students,this);
+        studentsRecyclerView.setAdapter(studentsListAdapter);
 
         student = new Student();
 
@@ -81,7 +82,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 students = db.getAllStudents();
-                studentsRecyclerView.setAdapter(studentsListAdapter);
+                studentsListAdapter.notifyDataSetChanged();
+
             }
         });
     }

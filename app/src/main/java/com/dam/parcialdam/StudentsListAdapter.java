@@ -34,17 +34,16 @@ public class StudentsListAdapter extends RecyclerView.Adapter<StudentsListAdapte
     @Override
     public void onBindViewHolder(@NonNull StudentsViewHolder holder, int position) {
         holder.studentInfo.setTag(position);
-        String st = null;
+        String st;
         Student student = students.get(position);
 
         if(student.isHeStudied()==1) {
-                st = "Estudio";
-            }
+            st = "Estudio";
+        }
         else {
             st = "No estudio";
         }
         holder.studentInfo.setText(student.getName()+" - "+st);
-
     }
 
     @Override
